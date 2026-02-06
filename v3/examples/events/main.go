@@ -27,8 +27,8 @@ func main() {
 	})
 
 	// Custom event handling
-	app.Events.On("myevent", func(e *application.WailsEvent) {
-		log.Printf("[Go] WailsEvent received: %+v\n", e)
+	app.Events.On("myevent", func(e *application.CustomEvent) {
+		log.Printf("[Go] CustomEvent received: %+v\n", e)
 	})
 
 	// OS specific application events
